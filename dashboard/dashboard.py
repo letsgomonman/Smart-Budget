@@ -23,17 +23,17 @@ sns.set_theme(style="whitegrid")
 @st.cache_data
 def load_all_datasets():
     # 1. Dataset Transaksi
-    df_transaksi = pd.read_csv('dataset_transaksi.csv')
+    df_transaksi = pd.read_csv('dashboard/dataset_transaksi.csv')
     df_transaksi['transaction_date'] = pd.to_datetime(df_transaksi['transaction_date'])
     
     # 2. Dataset Pengguna
-    df_users = pd.read_csv('dataset_pengguna.csv')
+    df_users = pd.read_csv('dashboard/dataset_pengguna.csv')
     
     # 3. Dataset Anggaran
-    df_budgets = pd.read_csv('dataset_budgets.csv')
+    df_budgets = pd.read_csv('dashboard/dataset_budgets.csv')
     
     # 4. Dataset Tantangan
-    df_challenges = pd.read_csv('dataset_challenge.csv')
+    df_challenges = pd.read_csv('dashboard/dataset_challenge.csv')
     
     return df_transaksi, df_users, df_budgets, df_challenges
 
