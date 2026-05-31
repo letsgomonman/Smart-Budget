@@ -1,1 +1,1 @@
-# Smart-Budget
+# Smart-Budget Gen Z Fintech
